@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://groovybot.gq/sitemap/sitemap.xml

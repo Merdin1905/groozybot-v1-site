@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html id="home">
+<head>
+    <title> Groozy </title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <meta name="google-site-verification" content="U-OCUkoNn2ZnXouLDxOw31LNrD3X9xCXilKbzcKkQVI">
+
+    <meta name="author" content="Rxsto">
+    <meta name="publisher" content="GroozyDevs">
+    <meta name="copyright" content="GroozyDevs">
+    <meta name="description"
+          content="Groozy is a feature-rich and experienced music-bot for Discord! He supports YouTube, Soundcloud, Spotify and more!">
+    <meta name="keywords"
+          content="Groozy, Groozybot, discord, discordbot, discord-bot, musicbot, music-bot, discord, bot, music, high quality, high, quality, rxsto, schlaubi">
+    <meta name="image" content="http://tr.groozybot.tk/assets/img/groovy.png">
+    <meta name="robots" content="index, follow">
+
+    <meta itemprop="name" content="Groozy">
+    <meta itemprop="description"
+          content="Groozy is a feature-rich and experienced music-bot for Discord! He supports YouTube, Soundcloud, Spotify and more!">
+    <meta itemprop="image" content="http://tr.groozybot.tk/assets/img/groovy.png">
+
+    <meta name="og:title" content="Groozy - Discord Music Bot">
+    <meta name="og:description"
+          content="Groozy is a feature-rich and experienced music-bot for Discord! He supports YouTube, Soundcloud, Spotify and more!">
+    <meta name="og:image" content="http://tr.groozybot.tk/assets/img/groovy.png">
+    <meta name="og:url" content="http://tr.groozybot.tk">
+    <meta property="og:keywords"
+          content="Groozy, Groozybot, discord, discordbot, discord-bot, musicbot, music-bot, discord, bot, music, high quality, high, quality, rxsto, schlaubi">
+    <meta name="og:site_name" content="Groozy">
+    <meta name="og:locale" content="en">
+    <meta name="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Groozy">
+    <meta name="twitter:description"
+          content="Groozy is a feature-rich and experienced music-bot for Discord! He supports YouTube, Soundcloud, Spotify and more!">
+    <meta name="twitter:site" content="@groovydevs">
+    <meta name="twitter:creator" content="@rxsto_official">
+
+    <link rel="icon" href="http://tr.groozybot.tk/assets/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="http://tr.groozybot.tk/assets/img/groovy.png">
+
+    <meta name="application-name" content="Groozy">
+    <meta name="theme-color" content="#da7272">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+</head>
+<body id="body">
+<nav class="animated fadeInDown">
+    <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo">
+        <h3>Groozy</h3>
+    </div>
+    <div class="bar">
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#commands"><i class="fas fa-list"></i> Commands</a>
+    </div>
+    <div onclick="menu();" id="navbar-toggle" class="navbar-toggle">
+        <div id="top-bar" class="navbar-toggle-item top-bar"></div>
+        <div id="middle-bar" class="navbar-toggle-item middle-bar"></div>
+        <div id="bottom-bar" class="navbar-toggle-item bottom-bar"></div>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+    <a onclick="menu();" href="#home"><i class="fas fa-home"></i> Home</a>
+    <a onclick="menu();" href="#commands"><i class="fas fa-list"></i> Commands</a>
+</div>
+<main>
+    <div class="site-dark hey">
+        <div class="Groozy">
+            <h1 class="toptext animated fadeInDown">It's time to get a good music-bot.</h1>
+            <h3 class="subtext animated fadeInDown">All in one: Groozy is a feature-rich and experienced music-bot for
+                Discord. He combines good quality with a large selection of functions and commands. Did you ever wanted
+                to have a good bot, that is especially made for music? Then choose Groozy!</h3>
+        </div>
+        <div class="buttons animated fadeInUp">
+            <a href="https://discord.com/oauth2/authorize?client_id=762363181376733206&scope=bot&permissions=8" class="btn invite animated fadeInDown"><i
+                    class="fas fa-plus-square"></i> Invite Groozy</a>
+            <a href="https://discord.gg/MwGjGdu" class="btn support animated fadeInDown"><i
+                    class="fab fa-discord"></i> Join Support</a>
+        </div>
+        <div class="stats animated zoomIn">
+            <div>
+                <p>Playing</p>
+                <p class="odometer stats-thin playing">Loading ...</p>
+            </div>
+            <div>
+                <p>Servers</p>
+                <p class="odometer stats-thin servers">Loading ...</p>
+            </div>
+            <div>
+                <p>Users</p>
+                <p class="odometer stats-thin users">Loading ...</p>
+            </div>
+        </div>
+        <div class="bigimg">
+            <img class="bigimgsource animated fadeInUp" src="assets/img/discord.png" alt="Discord UI">
+        </div>
+    </div>
+    <div id="commands" class="site-light commands">
+        <p>Commands <span class="thin">and</span> Features</p>
+        <table>
+            <tbody>
+            <tr>
+                <td class="command-name">play</td>
+                <td>Lets you play any music you want</td>
+            </tr>
+            <tr>
+                <td class="command-name">stop</td>
+                <td>Closes the currently playing song</td>
+            </tr>
+            <tr>
+                <td class="command-name">skip</td>
+                <td>Move to the next song. If there is no song next, it closes the song</td>
+            </tr>
+            <tr>
+                <td class="command-name">volume</td>
+                <td>Adjusts the sound of the music</td>
+            </tr>
+            <tr>
+                <td class="command-name">replay</td>
+                <td>Automatically replays the same song when the song is finished</td>
+            </tr>
+            <tr>
+                <td class="command-name">pause</td>
+                <td>Pauses the song playing</td>
+            </tr>
+            <tr>
+                <td class="command-name">resume</td>
+                <td>Continue the paused song</td>
+            </tr>
+            <tr>
+                <td class="command-name">istatistik</td>
+                <td>Shows the Bot's Statistics</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <div>
+        <p>© 2020 Groozy - All rights reserved.</p>
+        <a href="privacy">Privacy Policy</a>
+        <p class="line">|</p>
+        <a href="tos">Terms of Service</a>
+        <p class="line">|</p>
+        <a href="imprint">Imprint</a>
+        <p class="line">|</p>
+        <p>Made by</p>
+        <a target="_blank" href="http://tr.groozybot.tk/">Merdin#4784</a>
+    </div>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.animateNumber.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
